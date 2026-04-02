@@ -26,6 +26,12 @@ public class GameManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+
+        int diffIndex = PlayerPrefs.GetInt("SelectedDifficulty", 0);
+        if (difficultyLevels != null && difficultyLevels.Length > diffIndex)
+        {
+            currentDifficulty = difficultyLevels[diffIndex];
+        }
     }
 
     private void Start()
@@ -35,12 +41,6 @@ public class GameManager : MonoBehaviour
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-
-        int diffIndex = PlayerPrefs.GetInt("SelectedDifficulty", 0);
-        if (difficultyLevels != null && difficultyLevels.Length > diffIndex)
-        {
-            currentDifficulty = difficultyLevels[diffIndex];
-        }
 
         LoadHighScore();
         UpdateUI();

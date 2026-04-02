@@ -1,5 +1,4 @@
-Proje Geliştirme Süreci ve Yönerge Notları
-Hocam merhaba, projeyi geliştirirken yönergedeki şartları adım adım şu şekilde uyguladım:
+Proje Geliştirme Süreci 
 
 1. Fikir ve Görsel Özgünlük (Neon Tema)
 Oyunun mekaniği temelde engellerden kaçmaya dayansa da, yönergedeki "birebir kopya olmayacak ve özgün bir görsel stil sağlanacak" şartı için projeyi Neon tarzda tasarladım. Sabit renkli borular yerine kodla zaman içinde (Time.time ve HSV formülüyle) sürekli renk değiştiren engeller yaptım. Ayrıca Post Processing (Bloom) ve Trail Renderer kullanarak o neon hissiyatını güçlendirdim.
@@ -25,3 +24,5 @@ Projedeki "ScriptableObject kullanılmalı" şartını doğrudan oyunun zorluk m
 
 7. Sahne Geçişleri ve UI
 Ayrı bir Main Menu sahnesi tasarladım. Buradan zorluk seçildiğinde, seçilen zorluğun indeksini PlayerPrefs ile ana sahneye taşıdım ve Awake metodu içinde GameManager'ın doğru ScriptableObject'i çekmesini sağladım. Ayrıca oyuncu deneyimi için, oyun içinde fare imlecini kilitledim (Cursor.lockState) ve öldükten sonra "Play Again" butonuna tıklamaya gerek kalmadan direkt Space tuşuyla oyunu yeniden başlatma fonksiyonunu ekledim.
+
+Projenin çalışır buildi word dosyasındaki drive linkinde bulunmaktadır.

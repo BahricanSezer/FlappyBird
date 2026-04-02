@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b395dee1fc5e7354c8214f21b330cfe8, type: 3}
   m_Name: Easy
   m_EditorClassIdentifier: Assembly-CSharp::DifficultySettings
-  pipeSpeed: 9
+  pipeSpeed: 8.5
   spawnInterval: 0.9
   minGapSize: 1.5
-  maxGapSize: 4.5
+  maxGapSize: 4
   gravityMultiplier: 2
-  jumpForce: 10
+  jumpForce: 6
   minY: -2.6
   maxY: 2.6
